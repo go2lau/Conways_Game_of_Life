@@ -13,7 +13,10 @@ This is a C++ implementation of the aforementioned game using object-oriented pr
 
  # Features
  Personalized user input: Users can choose which initial configuration to load into the game by clicking on the cells they want to be alive. 
- The grid and the cells in it present different behavioral patterns and characteristics which are unique to them. In other words, they act as separate entities. 
+ 
+ The grid and the cells in it present different behavioral patterns and characteristics which are unique to them. In other words, they act as separate
+ entities. 
+ 
  Adjustable Parameters: Users will be able to choose the grid size and speed. 
  
  
