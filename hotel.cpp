@@ -2,24 +2,30 @@
 using namespace std;
 
 Hotel::Hotel(){
-    info[0];
-    rooms[0];
-
+    name="";
+    location="";
+    amenities={};
+    rooms={};
+    info={};
+    
 }
 
-Hotel::Hotel(string info[],int rooms[]){
-    info[0]= name;
-    info[1]= location;
-    info [2]= amenities;
-    for (int i=0; i<10; i++){//Again, 10 is not a fixed size
-        rooms[i]= Room;
+Hotel::Hotel(string name_, string location_, string amenities_[],Room rooms[], int room_count, int num_amenities){
+    name=name_;
+    location=location_;
+    for (int i=0; i<num_amenities; i++){
+        amenities[i]=amenities_[i];
+    }
+    info={name, location};
+    for (int i=0; i<room_count; i++){
+        rooms[i]= room;
     }
 }
 
-array <string,3> Hotel::get_hotel_info(){
+array <string,2> Hotel::get_hotel_info(){
     return info;
 }
 
-array <int,10> Hotel::get_rooms(){
+vector<Room> Hotel::get_rooms(){
     return rooms;
 }
