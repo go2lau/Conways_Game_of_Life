@@ -6,9 +6,9 @@ class Payment{
         float amount;
     public:
         Payment();
-        Payment(int val, float val2);
+        Payment(int val);
         float refund();
-
+        void make(float val2);
 
 
 };
