@@ -2,21 +2,23 @@
 #define HOTEL_H
 #include <string>
 #include <array>
+#include <vector>
+#include "room.h"
 using namespace std;
 class Hotel{
     protected: 
-        array<string,3> info;
+        array<string,2> info;
         string name;
         string location;
-        string amenities;
-        int Room;
-        //The size of this array is intended to vary over runtime. The implementation of this functionality is pending.
-        array<int,10> rooms;
+        vector<string> amenities;
+        Room room;
+        vector<Room> rooms;
     public:
         Hotel();
-        Hotel(string data[], int array[]);
-        array<string,3> get_hotel_info();
-        array<int,10> get_rooms();
+        Hotel(string data1, string data2, string vector[], Room room_array[], int val1, int val2);
+        array<string,2> get_hotel_info();
+        vector<string> get_amenities();
+        vector<Room> get_rooms();
 
 };
 #endif
