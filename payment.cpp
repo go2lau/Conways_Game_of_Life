@@ -5,10 +5,14 @@ Payment::Payment(){
     amount=0;
 }
 
-Payment::Payment(int payment_id_, float amount_){
+Payment::Payment(int payment_id_){
     payment_id= payment_id_;
-    amount= amount_;
 
+
+}
+
+void Payment::make(float amount_){
+    amount=amount_;
 }
 
 float Payment::refund(){
