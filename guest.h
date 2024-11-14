@@ -10,14 +10,19 @@ class Guest{
 
     protected:
         string name;
-        array <string,2> contact_info;
+        string phone_number;
+        string email; 
         vector <Booking> bookings_made;
+        vector <Payment> payments_made;
+
     public:
         Guest();
-        Guest(string data, string data2[], Booking vector1[], int val);
-        string get_name();
-        array<string,2> get_contact_info();
+        Guest(string data, string data2, string data3, Booking vector1[], Payment vector2[], int val, int val2);
+        void set_bookings(vector<Booking>);
+        void set_payments(vector<Payment>);
+        string get_guest_info();
         vector <Booking> get_bookings();
+        vector <Payment> get_payments();
 
 };
 #endif
