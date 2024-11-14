@@ -6,7 +6,6 @@ Hotel::Hotel(){
     location="";
     amenities={};
     rooms={};
-    info={};
     
 }
 
@@ -16,14 +15,17 @@ Hotel::Hotel(string name_, string location_, string amenities_[],Room rooms[], i
     for (int i=0; i<num_amenities; i++){
         amenities[i]=amenities_[i];
     }
-    info={name, location};
     for (int i=0; i<room_count; i++){
         rooms[i]= room;
     }
 }
 
-array <string,2> Hotel::get_hotel_info(){
-    return info;
+string Hotel::get_hotel_info(){
+    string info= "Name: "+ name+ "\nLocation: "+location;
+}
+
+vector<string> Hotel::get_amenities(){
+    return amenities;
 }
 
 vector<Room> Hotel::get_rooms(){
