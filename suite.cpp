@@ -2,10 +2,10 @@
 
 Suite::Suite(){
     spaces={};
-    type=0;
+    type="";
 
 }
-Suite::Suite(string spaces_[], int type_, int num_spaces){
+Suite::Suite(string spaces_[], string type_, int num_spaces){
     for (int i=0; i<num_spaces; i++){
         spaces[i]=spaces_[i];
     }
@@ -16,4 +16,9 @@ Suite::Suite(string spaces_[], int type_, int num_spaces){
 vector<string> Suite::get_suite_info(){
     return features;
     return spaces;
+}
+
+string Suite::get_suite_type(){
+
+    return type;
 }
