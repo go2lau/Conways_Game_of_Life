@@ -6,10 +6,11 @@
 class Suite: public Room{
     private:
         vector<string> spaces;
-        int type;
+        string type;
     public:
         Suite();
-        Suite(string vector[], int val, int val2);
+        Suite(string vector[], string data, int val2);
         vector<string> get_suite_info();
+        string get_suite_type();
 };
 #endif
