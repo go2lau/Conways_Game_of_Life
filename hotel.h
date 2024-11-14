@@ -7,7 +7,6 @@
 using namespace std;
 class Hotel{
     protected: 
-        array<string,2> info;
         string name;
         string location;
         vector<string> amenities;
@@ -16,9 +15,10 @@ class Hotel{
     public:
         Hotel();
         Hotel(string data1, string data2, string vector[], Room room_array[], int val1, int val2);
-        array<string,2> get_hotel_info();
+        string get_hotel_info();
         vector<string> get_amenities();
         vector<Room> get_rooms();
 
 };
 #endif
+
