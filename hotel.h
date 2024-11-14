@@ -6,7 +6,7 @@
 #include "room.h"
 using namespace std;
 class Hotel{
-    protected: 
+    private: 
         string name;
         string location;
         vector<string> amenities;
