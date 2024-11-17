@@ -1,25 +1,26 @@
 #ifndef ROOM_H
 #define ROOM_H
 #include <string>
-#include <array>
-#include <vector>
 using namespace std;
 class Room{
     protected: 
         bool isAvailable;
         string type;
-        vector<string> features;
+        string features;
         float price;
         int number;
     public: 
         Room();
-        Room(bool boolean, string data2, string data[], float num , int val, int val2);
+        Room(bool boolean, string data2, string data3, float num , int val);
         string get_type();
-        vector<string> get_features();
-        void book();
-        void cancel_booking();
+        string get_features();
+        string get_room_info();
         float get_price();
         int get_room_number();
+        string get_availability();
+        void set_availability(bool);
+        void set_features(string);
+        void set_price(float);
 
 };
 #endif
