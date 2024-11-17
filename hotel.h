@@ -4,20 +4,25 @@
 #include <array>
 #include <vector>
 #include "room.h"
+#include "suite.h"
 using namespace std;
 class Hotel{
     private: 
         string name;
         string location;
-        vector<string> amenities;
-        Room room;
+        string amenities;
         vector<Room> rooms;
+        vector<Suite> suites;
     public:
         Hotel();
-        Hotel(string data1, string data2, string vector[], Room room_array[], int val1, int val2);
+        Hotel(string data1, string data2, string data3);
+        void add_room(Room);
+        void add_suite(Suite);
+        void set_amenities(string);
         string get_hotel_info();
-        vector<string> get_amenities();
+        string get_amenities();
         vector<Room> get_rooms();
+        vector <Suite> get_suites();
 
 };
 #endif
