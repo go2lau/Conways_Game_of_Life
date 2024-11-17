@@ -4,27 +4,45 @@ using namespace std;
 Hotel::Hotel(){
     name="";
     location="";
-    amenities={};
+    amenities="";
     rooms={};
+    suites={};
     
 }
 
-Hotel::Hotel(string name_, string location_, string amenities_[],Room rooms[], int room_count, int num_amenities){
+Hotel::Hotel(string name_, string location_, string amenities_){
+
     name=name_;
     location=location_;
-    for (int i=0; i<num_amenities; i++){
-        amenities[i]=amenities_[i];
-    }
-    for (int i=0; i<room_count; i++){
-        rooms[i]= room;
-    }
+    amenities=amenities_;
+
+
+
 }
+
+void Hotel::set_amenities(string amenities_){
+    amenities= amenities_;
+
+}
+
+
+void Hotel::add_room(Room room){
+
+    rooms.push_back(room);
+}
+
+
+void Hotel::add_suite(Suite suite){
+
+    suites.push_back(suite);
+}
+
 
 string Hotel::get_hotel_info(){
-    string info= "Name: "+ name+ "\nLocation: "+location;
+    string info= "Name: "+ name+ "\nLocation: "+location + "\nAmenities: "+ amenities;
 }
 
-vector<string> Hotel::get_amenities(){
+string Hotel::get_amenities(){
     return amenities;
 }
 
