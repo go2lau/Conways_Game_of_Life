@@ -1,16 +1,17 @@
 #ifndef SUITE_H
 #define SUITE_H
-#include <vector>
 #include <string>
 #include "room.h"
 class Suite: public Room{
     private:
-        vector<string> spaces;
+        string spaces;
         string type;
     public:
         Suite();
-        Suite(string vector[], string data, int val2);
-        vector<string> get_suite_info();
+        Suite(string data, string data2);
+        string get_spaces();
+        string get_suite_info();
         string get_suite_type();
 };
 #endif
+
