@@ -1,24 +1,27 @@
 #include "suite.h"
 
 Suite::Suite(){
-    spaces={};
+    spaces="";
     type="";
 
 }
-Suite::Suite(string spaces_[], string type_, int num_spaces){
-    for (int i=0; i<num_spaces; i++){
-        spaces[i]=spaces_[i];
-    }
-    type= type_;
+Suite::Suite(string spaces_, string type_){
+    spaces=spaces_;
+    type=type_;
 
 }
 
-vector<string> Suite::get_suite_info(){
-    return features;
-    return spaces;
+string Suite::get_suite_info(){
+    string info= "Spaces: "+spaces+"\nType: "+type;
+    return info;
 }
 
 string Suite::get_suite_type(){
 
     return type;
+}
+
+string Suite::get_spaces(){
+
+    return spaces;
 }
