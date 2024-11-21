@@ -14,7 +14,8 @@ This project is a simulation of a simple hotel booking system written in C++ usi
  # Implementation
 
 The project is based on the following class diagram:
-![Captura de pantalla 2024-11-16 231020](https://github.com/user-attachments/assets/0d1218a2-73dc-446c-aa71-13973cc534c2)
+![Captura de pantalla 2024-11-21 094525](https://github.com/user-attachments/assets/5b9aff62-022b-4b4f-a38e-2483a582fcb6)
+
 
 
 
