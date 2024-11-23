@@ -1,12 +1,13 @@
-#include "guest.h"
+#include "guest.h"// Include the header file for the Guest class
 
+// Default constructor: Initializes the guest's name, phone number, and email to empty strings
 Guest::Guest(){
-    name="";
     phone_number="";
     email="";
 
 }
 
+// Constructor with parameters: Initializes the guest's name, phone number, email, booking, room, and suite
 Guest::Guest(string name_, string phone_number_, string email_, Booking booking_, Room room_, Suite suite_){
     name=name_;
     
@@ -19,7 +20,7 @@ Guest::Guest(string name_, string phone_number_, string email_, Booking booking_
 }
 
 
-
+// Function to book a room: Checks if the room is available, updates its availability, and returns a message
 string Guest::book_room(Room room_, Booking booking_){
 
     room=room_;
@@ -38,6 +39,7 @@ string Guest::book_room(Room room_, Booking booking_){
     return message;
 }
 
+// Function to book a suite: Checks if the suite is available, updates its availability, and returns a message
 string Guest::book_suite(Suite suite_, Booking booking_){
 
     suite=suite_;
@@ -72,13 +74,6 @@ string Guest::get_phone(){
     return phone_number;
 }
 
-
-string Guest::get_guest_info(){
-
-    string info= "Name: "+ name + "\nPhone number: "+ phone_number + "\nEmail: "+email;
-    return info;
-}
-
 Booking Guest::get_booking(){
     return booking;
 }
@@ -90,4 +85,3 @@ Room Guest::get_room(){
 Suite Guest::get_suite(){
     return suite;
 }
-
