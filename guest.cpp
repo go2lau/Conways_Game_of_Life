@@ -2,12 +2,12 @@
 
 Guest::Guest(){
     name="";
-    phone_number=0;
+    phone_number="";
     email="";
 
 }
 
-Guest::Guest(string name_, int phone_number_, string email_, Booking booking_, Room room_, Suite suite_){
+Guest::Guest(string name_, string phone_number_, string email_, Booking booking_, Room room_, Suite suite_){
     name=name_;
     
     booking=booking_;
@@ -18,15 +18,6 @@ Guest::Guest(string name_, int phone_number_, string email_, Booking booking_, R
 
 }
 
-void Guest::set_email(string email_){
-
-    email=email_;
-}
-
-void Guest::set_phone(int phone_number_){
-
-    phone_number=phone_number_;
-}
 
 
 string Guest::book_room(Room room_, Booking booking_){
@@ -65,41 +56,7 @@ string Guest::book_suite(Suite suite_, Booking booking_){
     return message;
 }
 
-string Guest::cancel_room_booking(Room room_, Booking booking_){
 
-    room=room_;
-    booking=booking_;
-    string message="";
-    if (suite.get_availability()=="Room is not available"){
-
-        suite.set_availability(1);
-        message= "You have cancelled this booking";
-        
-    }
-    else{
-        message= "Can't cancel a booking that hasn't been done yet.";
-    }
-
-    return message;
-}
-
-string Guest::cancel_suite_booking(Suite suite_, Booking booking_){
-
-    suite= suite_;
-    booking=booking_;
-    string message="";
-    if (suite.get_availability()=="Room is not available"){
-
-        suite.set_availability(1);
-        message= "You have cancelled this booking";
-        
-    }
-    else{
-        message= "Can't cancel a booking that hasn't been done yet.";
-    }
-
-    return message;
-}
 
 
 string Guest::get_email(){
@@ -111,14 +68,14 @@ string Guest::get_guest_name(){
     return name;
 }
 
-int Guest::get_phone(){
+string Guest::get_phone(){
     return phone_number;
 }
 
 
 string Guest::get_guest_info(){
 
-    string info= "Name: "+ name + "\nPhone number: "+ to_string(phone_number) + "\nEmail: "+email;
+    string info= "Name: "+ name + "\nPhone number: "+ phone_number + "\nEmail: "+email;
     return info;
 }
 
