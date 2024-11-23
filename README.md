@@ -4,7 +4,6 @@ This project is a simulation of a simple hotel booking system written in C++ usi
 # Features
 -Booking rooms and suites of any kind
 
--Ability to cancel bookings
 
 -User can preview the room and/or suite he/she has booked
 
