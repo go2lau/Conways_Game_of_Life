@@ -8,7 +8,7 @@ Booking::Booking(){
     
 }
 
-Booking::Booking(int booking_id_, int check_in_date_[], int check_out_date_[]){
+Booking::Booking(int booking_id_, array<int,3> check_in_date_, array<int,3> check_out_date_){
     booking_id=booking_id_;
     for (int i=0; i<3; i++){
         check_in_date[i]=check_in_date_[i];
@@ -18,29 +18,20 @@ Booking::Booking(int booking_id_, int check_in_date_[], int check_out_date_[]){
 
 }
 
-void Booking::set_checkin(array<int,3> check_in_date_){
-
-    for (int i=0; i<3; i++){
-        check_in_date[i]=check_in_date_[i];
-    }
-}
-
-void Booking::set_checkout(array<int,3> check_out_date_){
-
-    for (int i=0; i<3; i++){
-        check_out_date[i]=check_out_date_[i];
-    }
-}
 
 
 int Booking::get_booking_id(){
     return booking_id;
 }
 
-array<int,3> Booking::get_dates(){
+array<int,3> Booking::get_checkin(){
     return check_in_date;
+}
+
+array<int,3> Booking::get_checkout(){
     return check_out_date;
 }
+
 
 
 
