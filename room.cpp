@@ -17,16 +17,6 @@ Room::Room(bool isAvailable_, string type_, string features_, float price_, int 
     number=number_;
 }
 
-void Room::set_features(string features_){
-
-    features=features_;
-}
-
-void Room::set_price(float price_){
-
-    price=price_;
-}
-
 
 void Room::set_availability(bool isAvailable_){
     isAvailable=isAvailable_;
@@ -48,9 +38,11 @@ string avail="";
 
     if (isAvailable==0){
         avail="Room is not available";
+        return avail;
     }
     else{
         avail="Room is available";
+        return avail;
     }
     
 }
@@ -63,7 +55,3 @@ string Room::get_features(){
     return features;
 }
 
-string Room::get_room_info(){
-    string info= "Room number: "+to_string(number)+"\nPrice: "+to_string(price)+ "\nFeatures: "+features+"\nAvailability: "+get_availability();
-    return info;
-}
