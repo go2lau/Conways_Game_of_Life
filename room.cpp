@@ -1,6 +1,7 @@
-#include "room.h"
+#include "room.h"// Include the header file for the Room class
 using namespace std;
 
+// Default constructor: Initializes room attributes to default values
 Room::Room(){
     isAvailable=0;
     type= "";
@@ -9,6 +10,7 @@ Room::Room(){
     number=0;
 }
 
+// Constructor with parameters: Initializes room attributes with provided values
 Room::Room(bool isAvailable_, string type_, string features_, float price_, int number_){
     isAvailable=isAvailable_;
     type=type_; 
@@ -17,7 +19,7 @@ Room::Room(bool isAvailable_, string type_, string features_, float price_, int 
     number=number_;
 }
 
-
+// Setter function for room availability: Updates the room's availability status
 void Room::set_availability(bool isAvailable_){
     isAvailable=isAvailable_;
 }
@@ -54,4 +56,5 @@ string Room::get_type(){
 string Room::get_features(){
     return features;
 }
+
 
