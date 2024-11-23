@@ -18,10 +18,10 @@ class Guest{
     public:
         Guest();
         Guest(string data, string data2, string data3, Booking booking, Room room, Suite suite);
-        // Function to book a room: Takes a Room and Booking object, returns a message indicating if the booking was successful
-        string book_room(Room, Booking); 
-         // Function to book a suite: Takes a Suite and Booking object, returns a message indicating if the booking was successful
-        string book_suite(Suite, Booking);
+        // Function to book a room: Takes a Room and Booking object, changes its availability
+        void book_room(Room, Booking); 
+         // Function to book a suite: Takes a Suite and Booking object, changes its availability
+        void book_suite(Suite, Booking);
         string get_email();
         string get_phone();
         string get_guest_name();
