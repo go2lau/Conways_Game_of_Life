@@ -20,10 +20,7 @@ Hotel::Hotel(string name_, string location_, string amenities_){
 
 }
 
-void Hotel::set_amenities(string amenities_){
-    amenities= amenities_;
 
-}
 
 
 void Hotel::add_room(Room room){
@@ -40,12 +37,19 @@ void Hotel::add_suite(Suite suite){
 
 string Hotel::get_hotel_info(){
     string info= "Name: "+ name+ "\nLocation: "+location + "\nAmenities: "+ amenities;
+    return info;
 }
 
-string Hotel::get_amenities(){
-    return amenities;
-}
+
 
 vector<Room> Hotel::get_rooms(){
     return rooms;
+}
+
+vector<Suite> Hotel::get_suites(){
+    return suites;
+}
+
+string Hotel::get_name(){
+    return name;
 }
