@@ -1,10 +1,11 @@
 #ifndef SUITE_H
 #define SUITE_H
-#include <string>
-#include "room.h"
-class Suite: public Room{
+#include <string> // Include string library for using strings
+#include "room.h" //Include room header file
+class Suite: public Room{ //Inheritance relationship with room
     private:
-        string spaces;
+        //Additional attributes special for the class
+        string spaces; 
         string suite_type;
     public:
         Suite();
