@@ -5,13 +5,11 @@
 class Suite: public Room{
     private:
         string spaces;
-        string type;
+        string suite_type;
     public:
         Suite();
-        Suite(string data, string data2);
+        Suite(bool boolean, string data, string data2, float num , int val,string data3, string data4);
         string get_spaces();
-        string get_suite_info();
         string get_suite_type();
 };
 #endif
-
