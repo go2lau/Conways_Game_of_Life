@@ -1,5 +1,5 @@
 # Hotel_Booking_System
-This project is a simulation of a simple hotel booking system written in C++ using Object-Oriented Programming. The interface of this program allows users to book the rooms of their choice at any hotel they want. Furthermore, it enables them to consult the status of their payment, and of course cancel their bookings at any given time before the check-in date. As can be seen, the functionalities of this project are barely limited and can be found in any conventional hotel booking system, meaning that it is almost certainly ready to be used in real instances. 
+This project is a simulation of a simple hotel booking system written in C++ using Object-Oriented Programming. The interface of this program allows users to book the rooms of their choice at any hotel they want out of five to choose from. The program interface creates a feeling of likeness to a real hotel booking system, since values like the number of rooms available, their room number and their features are randomized each time the program is run, emulating how different rooms are available in hotel booking systems depending on seasons and other factors. Furtermore, the booking process deeply resembles that of a real hotel booking system, as guest data are retrieved and a booking id is generated.  
 
 # Features
 -Booking rooms and suites of any kind
