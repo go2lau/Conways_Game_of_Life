@@ -1,11 +1,11 @@
 #include <iostream>
 #include <cstdlib> 
 #include <ctime>
-#include "C:\Users\peluc\OneDrive\Escritorio\hotel_booking_system\header_fi\hotel.cpp"
-#include "C:\Users\peluc\OneDrive\Escritorio\hotel_booking_system\header_fi\guest.cpp"
-#include "C:\Users\peluc\OneDrive\Escritorio\hotel_booking_system\header_fi\booking.cpp"
-#include "C:\Users\peluc\OneDrive\Escritorio\hotel_booking_system\header_fi\room.cpp"
-#include "C:\Users\peluc\OneDrive\Escritorio\hotel_booking_system\header_fi\suite.cpp"
+#include "hotel.cpp"
+#include "guest.cpp"
+#include "booking.cpp"
+#include "room.cpp"
+#include "suite.cpp"
 using namespace std;
 
 // Function to generate random features for rooms
