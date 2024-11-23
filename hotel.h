@@ -18,11 +18,10 @@ class Hotel{
         Hotel(string data1, string data2, string data3);
         void add_room(Room);
         void add_suite(Suite);
-        void set_amenities(string);
         string get_hotel_info();
-        string get_amenities();
         vector<Room> get_rooms();
         vector <Suite> get_suites();
+        string get_name();
 
 };
 #endif
